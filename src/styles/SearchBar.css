@@ -1,0 +1,104 @@
+/*
+  SearchBar Styles
+  
+  Styling for the search input component that filters recipes.
+  Provides a clean, modern search interface with clear visual feedback.
+*/
+
+.search-bar-container {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 14px 40px 14px 16px;
+  font-size: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #333;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #e8724c;
+  box-shadow: 0 0 0 3px rgba(232, 114, 76, 0.1);
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-clear-button {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-clear-button:hover {
+  color: #e8724c;
+  background-color: #f0f0f0;
+}
+
+.search-clear-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .search-bar-container {
+    margin: 30px 0;
+  }
+
+  .search-input {
+    padding: 12px 36px 12px 14px;
+    font-size: 14px;
+  }
+
+  .search-clear-button {
+    font-size: 16px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar-container {
+    margin: 20px 0;
+  }
+
+  .search-input {
+    padding: 10px 32px 10px 12px;
+    font-size: 14px;
+  }
+
+  .search-input::placeholder {
+    font-size: 12px;
+  }
+
+  .search-clear-button {
+    font-size: 14px;
+    right: 8px;
+  }
+}

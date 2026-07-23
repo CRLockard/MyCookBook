@@ -1,0 +1,48 @@
+/*
+  Footer Styles
+  
+  The footer appears at the bottom of every page and provides
+  copyright and branding information. It has a subtle design
+  that complements the navbar.
+*/
+
+.footer {
+  background-color: #f8f8f8;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 40px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  text-align: center;
+  color: #666;
+}
+
+.footer-container p {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 20px 15px;
+  }
+
+  .footer-container p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 15px 10px;
+  }
+
+  .footer-container p {
+    font-size: 12px;
+  }
+}

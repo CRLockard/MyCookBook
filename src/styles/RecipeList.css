@@ -1,0 +1,105 @@
+/*
+  RecipeList Styles
+  
+  Styling for the grid container that displays multiple recipe cards.
+  Includes responsive grid layout and empty state styling.
+*/
+
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin: 40px 0;
+}
+
+/* Empty State Styling */
+.recipe-list-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  padding: 40px 20px;
+}
+
+.recipe-list-empty-content {
+  text-align: center;
+  max-width: 500px;
+}
+
+.recipe-list-empty-icon {
+  font-size: 64px;
+  margin: 0;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.recipe-list-empty-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 12px 0;
+}
+
+.recipe-list-empty-message {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Grid Layout */
+@media (max-width: 1024px) {
+  .recipe-list {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .recipe-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 18px;
+    margin: 25px 0;
+  }
+
+  .recipe-list-empty {
+    min-height: 350px;
+    padding: 30px 15px;
+  }
+
+  .recipe-list-empty-title {
+    font-size: 24px;
+  }
+
+  .recipe-list-empty-message {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe-list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 20px 0;
+  }
+
+  .recipe-list-empty {
+    min-height: 300px;
+    padding: 25px 15px;
+  }
+
+  .recipe-list-empty-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+
+  .recipe-list-empty-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .recipe-list-empty-message {
+    font-size: 14px;
+  }
+}

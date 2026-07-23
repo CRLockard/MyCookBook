@@ -1,0 +1,59 @@
+/*
+  NotFound Page Styles
+  
+  Styling for the 404 page that appears when users
+  navigate to routes that don't exist.
+*/
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 20px;
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 500px;
+}
+
+.not-found-title {
+  font-size: 120px;
+  font-weight: bold;
+  margin: 0;
+  color: #e8724c;
+  line-height: 1;
+}
+
+.not-found-subtitle {
+  font-size: 28px;
+  margin: 20px 0 10px 0;
+  color: #333;
+}
+
+.not-found-message {
+  font-size: 16px;
+  color: #666;
+  margin: 15px 0 30px 0;
+  line-height: 1.6;
+}
+
+.home-button {
+  background-color: #e8724c;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #d85a34;
+}
+
+.home-button:active {
+  transform: scale(0.98);
+}
